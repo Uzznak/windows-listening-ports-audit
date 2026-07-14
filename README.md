@@ -48,19 +48,17 @@ Si l’exécution est bloquée :
 *Set-ExecutionPolicy -Scope Process Bypass  
 
 Afficher le contenu :  
-Import-Csv .\results\ports.csv  
-# ou  
-cat .\results\ports.csv  
+Import-Csv .\results\ports.csv  ou  cat .\results\ports.csv  
 
-# Analyse des ports / Port analysis  
+# 4. Analyse des ports / Port analysis  
 
 ## 🇫🇷 Interpréter les résultats  
-- **135, 139, 445** → Services Windows (RPC, NetBIOS, SMB).  
+- **135, 139, 445** : Services Windows (RPC, NetBIOS, SMB).  
   À bloquer sur interface publique.  
-- **80, 443** → Services web.  
-- **22, 3389** → Accès distant (SSH, RDP).  
+- **80, 443** : Services web.  
+- **22, 3389** : Accès distant (SSH, RDP).  
   À sécuriser fortement.  
-- **> 49152** → Ports dynamiques Windows.  
+- **> 49152** : Ports dynamiques Windows.  
   Généralement sans risque.  
 - Identifier un processus :
 
