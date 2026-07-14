@@ -52,25 +52,22 @@ Import-Csv .\results\ports.csv  ou  cat .\results\ports.csv
 ## 4. Analyse des ports / Port analysis  
 
 ### 🇫🇷 Interpréter les résultats  
-- **135, 139, 445** : Services Windows (RPC, NetBIOS, SMB).  
-  À bloquer sur interface publique.  
-- **80, 443** : Services web.  
-- **22, 3389** : Accès distant (SSH, RDP).  
-  À sécuriser fortement.  
-- **> 49152** : Ports dynamiques Windows.  
-  Généralement sans risque.  
+- **135, 139, 445** : Services Windows (RPC, NetBIOS, SMB)
+  À bloquer sur interface publique  
+- **80, 443** : Services web  
+- **22, 3389** : Accès distant (SSH, RDP) À sécuriser   
+- **> 49152** : Ports dynamiques Windows, peu risqué 
 - Identifier un processus :
 
 Get-NetTCPConnection -State Listen | Select-Object LocalPort, OwningProcess
 
 ## 🇬🇧 Interpreting results  
-- **135, 139, 445** : Windows services (RPC, NetBIOS, SMB).  
-  Block on public interfaces.  
-- **80, 443** : Web services.  
-- **22, 3389** : Remote access (SSH, RDP).  Must be secured.  
-- **> 49152** : Windows dynamic ports.  Usually safe.  
+- **135, 139, 445** : Windows services (RPC, NetBIOS, SMB)
+  Block on public interfaces  
+- **80, 443** : Web services  
+- **22, 3389** : Remote access (SSH, RDP).  Must be secured 
+- **> 49152** : Windows dynamic ports.  Usually safe  
 - Identify the process:
-
 Get-NetTCPConnection -State Listen | Select-Object LocalPort, OwningProcess
 
 
