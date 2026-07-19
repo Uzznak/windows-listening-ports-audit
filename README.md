@@ -61,7 +61,7 @@ Import-Csv .\results\ports.csv  ou  cat .\results\ports.csv
 
 Get-NetTCPConnection -State Listen | Select-Object LocalPort, OwningProcess
 
-## 🇬🇧 Interpreting results  
+### 🇬🇧 Interpreting results  
 - **135, 139, 445** : Windows services (RPC, NetBIOS, SMB)
   Block on public interfaces  
 - **80, 443** : Web services  
