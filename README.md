@@ -1,6 +1,6 @@
 # Auditer des ports windows / Windows Listening Ports Audit (4 juillet 2026)
 
-**FR**: Suite à l'achat d'un nouveau PC j'ai refais un auto diagnostique de mes ports.  
+**FR**: Suite à l'achat d'un nouveau PC j'ai fait un auto diagnostique de mes ports.  
 J'ai fait ce mini projet qui reprend la procédure que j'ai utilisé pour faire l'audit de mes ports, et identifier quoi sécuriser. Les ports sont fictifs.
 
 **EN** : Following the purchase of a new PC, I performed an auto-diagnostic of my ports.
